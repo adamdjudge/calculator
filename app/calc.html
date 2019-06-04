@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./calc.js"></script>
+	</head>
+	<body>
+		<table>
+            <!--
+            <tr>
+                <td colspan="4" id="store"></td>
+            </tr>
+            -->
+            <tr>
+                <td colspan="4" id="number">0</td>
+            </tr>
+            <tr>
+                <td class="key" id="keyClear" onclick="pressClear();">C</td>
+                <td class="key" id="keySign" onclick="pressSign();">+/-</td>
+                <td class="key" id="keyPercent" onclick="pressPercent();">%</td>
+                <td class="key" id="keyDivide" onclick="setFunction('/');">/</td>
+            </tr>
+            <tr>
+                <td class="key" id="key7" onclick="addDigit(7);">7</td>
+                <td class="key" id="key8" onclick="addDigit(8);">8</td>
+                <td class="key" id="key9" onclick="addDigit(9);">9</td>
+                <td class="key" id="keyMultiply" onclick="setFunction('*');">*</td>
+            </tr>
+            <tr>
+                <td class="key" id="key4" onclick="addDigit(4);">4</td>
+                <td class="key" id="key5" onclick="addDigit(5);">5</td>
+                <td class="key" id="key6" onclick="addDigit(6);">6</td>
+                <td class="key" id="keyMinus" onclick="setFunction('-');">-</td>
+            </tr>
+            <tr>
+                <td class="key" id="key1" onclick="addDigit(1);">1</td>
+                <td class="key" id="key2" onclick="addDigit(2);">2</td>
+                <td class="key" id="key3" onclick="addDigit(3);">3</td>
+                <td class="key" id="keyPlus" onclick="setFunction('+');">+</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="key" id="key0" onclick="addDigit(0);">0</td>
+                <td class="key" id="keyDot" onclick="pressDot();">.</td>
+                <td class="key" id="keyEquals" onclick="pressEquals();">=</td>
+            </tr>
+        </table>
+	</body>
+</html>
